@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg" >
+    <!-- <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top_bg" >
+    </RelativeLayout> -->
+    <TextView
+        android:id="@+id/txt_RequestDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Requests Details"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <TableLayout
+        android:id="@+id/tableLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_RequestDetails"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:shrinkColumns="1" >        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="VCN: "
+                android:textStyle="bold" 
+                android:textColor="#000000"
+                android:gravity="right"/>
+            <TextView
+                android:id="@+id/txt_VCN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="11428"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="VesselName: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_VesselName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MT AEL 1"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LOA: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_LOA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="84.5" 
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DRAFT: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_valueVCN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0" 
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Plt Act: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_PltAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="B" 
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Frm Mrn Loc: "
+                android:textStyle="bold"
+                android:gravity="right" 
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_FrmMrnLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SEA" 
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="To Mrn Loc: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_ToMrnLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="STS" 
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Date: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_StartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="12-09-2012 15:00" 
+                android:textColor="#000000"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Allocated POB: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_AllocPOB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="13-09-2012 10:00" 
+                android:textColor="#000000"/>
+        </TableRow>
+    </TableLayout>
+     <TextView
+        android:id="@+id/txt_TugDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout01"
+        android:layout_marginLeft="10dp"
+        android:text="Tug Details"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+     <TableLayout
+        android:id="@+id/tableLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_TugDetails"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:shrinkColumns="1" >        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tug ID: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_TugID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DLPH10"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Date: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_StartDT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14-09-2012 17:00"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="End Date: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_EndDT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14-09-2012 19:00"
+                android:textColor="#000000" />
+        </TableRow>
+        </TableLayout>
+        <TableLayout
+        android:id="@+id/tableLayout03"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout02"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:shrinkColumns="1" >        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tug ID: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_TugID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DLPH11"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Date: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_StartDT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14-09-2012 18:00"
+                android:textColor="#000000" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="End Date: "
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/txt_EndDT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="14-09-2012 20:00"
+                android:textColor="#000000" />
+        </TableRow>
+        </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg" >
+        <!-- <Button
+            android:id="@+id/btn_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:text="Save"
+            android:textColor="#000000"
+            android:textStyle="bold" >
+        </Button> -->
+
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:text="Start"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" 
+            android:background="@drawable/button_bluedark" >
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

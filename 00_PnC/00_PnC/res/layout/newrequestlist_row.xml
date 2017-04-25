@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal" >
+    <TableLayout
+        android:id="@+id/listRowTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="40dp" >
+
+        <TableRow>
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" VCN"
+                android:textColor="#040404"
+                android:textSize="15dip" /> -->
+
+            <TextView
+                android:id="@+id/txt_lVCN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111428"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:textStyle="bold" 
+                android:gravity="left"
+                android:layout_weight="1"/>
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vessel Name "
+                android:textColor="#040404"
+                android:textSize="15dip" /> -->
+
+            <TextView
+                android:id="@+id/txt_lVesselName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MT AEL 1"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow>
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expc Start Date "
+                android:textColor="#040404"
+                android:textSize="15dip" /> -->
+
+            <TextView
+                android:id="@+id/txt_lExpcstartdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14-09-2012 10:00"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:layout_weight="1" />
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilot Activity "
+                android:textColor="#040404"
+                android:textSize="15dip" /> -->
+
+            <TextView
+                android:id="@+id/txt_lPilotActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:textColor="#FFA500"
+                android:textSize="15dip"
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:layout_weight="1"/>
+
+            
+        </TableRow>
+
+        <TableRow>
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" From Loc "
+                android:textColor="#040404"
+                android:textSize="15dip" /> -->
+
+            <TextView
+                android:id="@+id/txt_lFromLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEA"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:textStyle="bold" 
+                android:gravity="left"
+                android:layout_weight="1"/>
+
+            
+
+            <!-- <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" To Loc"
+                android:textColor="#040404"
+                android:textSize="15dip" /> -->
+
+            <TextView
+                android:id="@+id/txt_lToLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STS"
+                android:textColor="#040404"
+                android:textSize="15dip"
+                android:textStyle="bold" 
+                android:gravity="right"
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/listRowTable"
+        android:background="#FF909090" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"        
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>

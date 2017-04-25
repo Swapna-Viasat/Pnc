@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_bg" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/top_bg" >
+
+        <TextView
+            android:id="@+id/quickRegLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="50dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/title_header"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/useridfield"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:colorForeground="#686868"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:textColor="#000000" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/passwordlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:colorForeground="#686868"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lines="1"
+            android:password="true"
+            android:maxLength="8"
+            android:singleLine="true"
+            android:textColor="#000000" >
+        </EditText>
+        <Button
+                    android:id="@+id/btn_Login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"  
+                    android:layout_marginTop="10dp"                  
+                    android:background="@drawable/button_bluedark"                    
+                    android:text="@string/login"
+                    android:textColor="#EDEEF8"
+                    android:textSize="14dp"
+                    android:textStyle="bold" >
+                </Button>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:text="Developed By CMC Limited"
+        android:textColor="#FFFFFF"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>
